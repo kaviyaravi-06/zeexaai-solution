@@ -1,14 +1,21 @@
-// App.tsx
 import React from 'react';
 import SolutionsGrid from './components/SolutionsGrid';
-import './App.css';
+import Industries from './components/Industries';
+import TechDeepDive from './components/TechDeepDive';
+import Testimonials from './components/Testimonials';
+import CTA from './components/CTA';
+import './index.css';
 
-function App() {
+const App: React.FC = () => {
   return (
-    <div className="App">
+    <div className="app">
       <SolutionsGrid />
+      <Industries />
+      <TechDeepDive />
+      <Testimonials />
+      <CTA />
     </div>
   );
-}
+};
 
 export default App;
