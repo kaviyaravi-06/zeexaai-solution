@@ -1,28 +1,36 @@
-/* index.css */
-/* Reset and base styles */
+/* solution.css - Merged and Optimized CSS */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+  color: white;
 }
 
+/* HTML & Body */
 html {
   scroll-behavior: smooth;
 }
 
 body {
-  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 
-               'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 
-               'Helvetica Neue', sans-serif;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 
+               'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: #0a0a0a;
+  background: radial-gradient(circle at top left, #071427, #030712, #000000);
   color: #ffffff;
   line-height: 1.6;
   overflow-x: hidden;
+  padding-top: 150px;
+  min-height: 100vh;
 }
 
-/* Custom scrollbar */
+/* App Container */
+.App {
+  min-height: 100vh;
+}
+
+/* Custom Scrollbar */
 ::-webkit-scrollbar {
   width: 8px;
 }
@@ -40,7 +48,7 @@ body {
   background: linear-gradient(135deg, #764ba2 0%, #667eea 100%);
 }
 
-/* Selection styles */
+/* Selection Styles */
 ::selection {
   background: rgba(102, 126, 234, 0.3);
   color: white;
@@ -68,7 +76,7 @@ a {
   transition: color 0.3s ease;
 }
 
-/* Utility classes */
+/* Utility Classes */
 .container {
   max-width: 1200px;
   margin: 0 auto;
@@ -140,7 +148,7 @@ a {
   }
 }
 
-/* Animation utility classes */
+/* Animation Utility Classes */
 .animate-fade-in-up {
   animation: fadeInUp 0.8s ease-out;
 }
@@ -161,13 +169,13 @@ a {
   animation: float 3s ease-in-out infinite;
 }
 
-/* Loading states */
+/* Loading States */
 .loading {
   opacity: 0.7;
   pointer-events: none;
 }
 
-/* Focus styles for accessibility */
+/* Focus Styles for Accessibility */
 button:focus-visible,
 a:focus-visible,
 input:focus-visible {
@@ -175,7 +183,7 @@ input:focus-visible {
   outline-offset: 2px;
 }
 
-/* Responsive design helpers */
+/* Responsive Design Helpers */
 .mobile-only {
   display: none;
 }
@@ -194,7 +202,7 @@ input:focus-visible {
   }
 }
 
-/* Print styles */
+/* Print Styles */
 @media print {
   * {
     background: transparent !important;
@@ -208,7 +216,7 @@ input:focus-visible {
   }
 }
 
-/* High contrast mode support */
+/* High Contrast Mode Support */
 @media (prefers-contrast: high) {
   :root {
     --text-color: #000000;
@@ -216,7 +224,7 @@ input:focus-visible {
   }
 }
 
-/* Reduced motion support */
+/* Reduced Motion Support */
 @media (prefers-reduced-motion: reduce) {
   * {
     animation-duration: 0.01ms !important;

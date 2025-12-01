@@ -4,11 +4,11 @@ import Industries from './components/Industries';
 import TechDeepDive from './components/TechDeepDive';
 import Testimonials from './components/Testimonials';
 import CTA from './components/CTA';
-import './index.css';
+import './solution.css';
 
 const App: React.FC = () => {
   return (
-    <div className="app">
+    <div className="App"> 
       <SolutionsGrid />
       <Industries />
       <TechDeepDive />
